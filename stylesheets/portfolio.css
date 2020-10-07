@@ -275,3 +275,450 @@ a:visited {
     --heading-line-height: 1.2;
     --body-line-height: 1.4
 }
+
+body section.skill-set {
+    display: -webkit-box;
+    display: flex
+}
+
+body section.skill-set .skill-set-content {
+    width: 100%
+}
+
+body section.skill-set .skill-set-content p {
+    margin-top: 1em;
+    line-height: 1.8
+}
+
+body section.skill-set .skill-set-content h4 {
+    margin-top: 1em;
+    font-weight: 700
+}
+
+body section.skill-set .skill-set-items-wrapper {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative
+}
+
+body section.skill-set .skill-set-item {
+    width: 40%;
+    margin: 5%
+}
+
+body section.skill-set .skill-set-item .skill-logos {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap
+}
+
+body section.skill-set .skill-set-item .skill-logos a.logo {
+    cursor: pointer
+}
+
+body section.skill-set .skill-set-item .skill-logos .logo {
+    padding: 6px;
+    border: 1px solid rgba(180, 53, 205, 0.812);
+    border-radius: 38% 62% 57% 43%/43% 50% 50% 57%;
+    margin: 3px;
+    display: -webkit-box;
+    display: flex;
+}
+
+body section.skill-set .skill-set-item .skill-logos .logo:hover {
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    background: rgba(180, 53, 205, 0.212);
+    border: 1px solid rgba(226, 3, 255, 0.212)
+}
+
+body section.skill-set .skill-set-item .skill-logos img {
+    width: 25px;
+    height: 25px
+}
+
+body section.skill-set .skill-set-illustration-wrapper {
+    position: relative;
+    width: 50%
+}
+
+body section.skill-set .skill-set-icon {
+    padding: .3em;
+    background: #D896FF;
+    height: 3em;
+    width: 3em;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    box-shadow: inset 0 0 8px rgba(67, 67, 67, .28);
+    border-radius: 38% 62% 57% 43%/43% 50% 50% 57%;
+    -webkit-animation: morph 6s ease-in-out infinite alternate both;
+    animation: morph 6s ease-in-out infinite alternate both
+}
+
+body section.skill-set .skill-set-icon .icon {
+    height: 3.5em;
+    width: 3.5em
+}
+
+body section.skill-set .circle {
+    width: 13em;
+    height: 13em;
+    border-radius: 100%;
+    background: #D896FF;
+    left: -15em;
+    top: -4.5em;
+    position: absolute
+}
+
+body section.skill-set .skill-set-illustration img {
+    height: 50em;
+    position: relative;
+    left: -36%;
+    top: -5%
+}
+
+.text--sm, small {
+    font-size: .83333em;
+    font-size: var(--text-sm)
+}
+/*
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+    content: "";
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.flex-center {
+    -webkit-box-pack: center;
+    justify-content: center
+}
+
+.flex-center, .flex-center-spaced {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center
+}
+
+.flex-center-spaced {
+    -webkit-box-pack: justify;
+    justify-content: space-between
+}
+
+.strikethrough {
+    -webkit-text-decoration-line: line-through;
+    text-decoration-line: line-through
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.tooltip-container {
+    position: relative
+}
+
+.tooltip-container .tooltip {
+    position: absolute;
+    pointer-events: none;
+    padding: 8px 10px;
+    background-color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    z-index: 1;
+    min-width: 300px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    top: 100%;
+    left: 0;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+    opacity: 0;
+    -webkit-transform: translate(0) scale(.99);
+    transform: translate(0) scale(.99);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    line-height: 1.5
+}
+
+.tooltip-container .tooltip.right {
+    right: 0;
+    left: auto
+}
+
+.tooltip-container:hover .tooltip {
+    opacity: 1;
+    z-index: 100;
+    -webkit-transform: translateY(10px) scale(1);
+    transform: translateY(10px) scale(1)
+}
+
+:root {
+    --font-display: "Questrial", sans-serif;
+    --font-paragraph: "Questrial", serif;
+    --font-paragraph-color: #727272;
+    --color-text-heading: #4f4f4f;
+    --text-base-size: 1em;
+    --text-scale-ratio: 1.2;
+    --text-xs: calc(1em/var(--text-scale-ratio)*var(--text-scale-ratio));
+    --text-sm: calc(1em/var(--text-scale-ratio));
+    --text-md: calc(1em*var(--text-scale-ratio));
+    --text-lg: calc(1em*var(--text-scale-ratio)*var(--text-scale-ratio));
+    --text-xl: calc(1em*var(--text-scale-ratio)*var(--text-scale-ratio)*var(--text-scale-ratio));
+    --text-xxl: calc(1em*var(--text-scale-ratio)*var(--text-scale-ratio)*var(--text-scale-ratio)*var(--text-scale-ratio));
+    --text-xxxl: calc(1em*var(--text-scale-ratio)*var(--text-scale-ratio)*var(--text-scale-ratio)*var(--text-scale-ratio)*var(--text-scale-ratio));
+    --heading-line-height: 1.2;
+    --body-line-height: 1.4
+}
+
+
+.text--xxxl {
+    font-size: 2.48832em;
+    font-size: var(--text-xxxl)
+}
+
+.text--xs {
+    font-size: .69444em;
+    font-size: var(--text-xs)
+}
+
+b, strong {
+    font-weight: 700
+}
+
+.text-container h2, .text-container h3, .text-container h4 {
+    margin-top: var(--space-sm)
+}
+
+.text-container ol, .text-container p, .text-container ul {
+    margin-bottom: var(--space-md)
+}
+
+.text-container ol, .text-container ul {
+    list-style-position: outside;
+    padding-left: 24px
+}
+
+.text-container ul {
+    list-style-type: disc
+}
+
+.text-container ol {
+    list-style-type: decimal
+}
+
+.text-container ol li, .text-container ul li {
+    line-height: 1.4;
+    line-height: var(--body-line-height)
+}
+
+.text-container em {
+    font-style: italic
+}
+
+.text-container u {
+    text-decoration: underline
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+body section.projects {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    position: relative
+}
+
+body section.projects h2 {
+    margin-bottom: 2em
+}
+
+body section.projects .project {
+    z-index: 1;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    width: 55%;
+    margin-left: 5em;
+    margin-bottom: 5em
+}
+
+body section.projects .project:nth-of-type(3) {
+    margin-left: 15em
+}
+
+body section.projects .project img {
+    border-radius: 18px;
+    border: 0;
+    box-shadow: none;
+    width: 200px;
+    margin-right: 2em;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025)
+}
+
+body section.projects .project .project-details {
+    padding-top: 1.5em
+}
+
+body section.projects .project .project-details .project-name {
+    font-size: 1.44em;
+    font-size: var(--text-lg);
+    margin-bottom: .5em;
+    font-weight: 700;
+    color: #4f4f4f
+}
+
+body section.projects .project .project-details .project-description {
+    line-height: 1.8em;
+    font-size: .83333em;
+    font-size: var(--text-sm);
+    color: #727272;
+    color: var(--font-paragraph-color)
+}
+
+body section.projects .ring-wrapper {
+    position: absolute;
+    height: 35em;
+    width: 35em;
+    display: -webkit-box;
+    display: flex;
+    top: 33%;
+    left: -45%;
+    align-self: center
+}
+
+body section.projects .circle-outer {
+    background: #D896FF;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center
+}
+
+body section.projects .circle-inner {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    background: #fff;
+    border-radius: 100%
+}
+
+body section.blog {
+    margin-top: 10em;
+    position: relative
+}
+
+body section.blog .blog-title {
+    font-weight: 700;
+    margin-bottom: .5em
+}
+
+body section.blog .blog-posts {
+    position: relative;
+    z-index: 1;
+    height: 32em;
+    padding-top: 6em
+}
+
+body section.blog .blog-posts h2 {
+    margin-bottom: 1em
+}
+
+body section.blog .article-wrapper {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap
+}
+
+body section.blog .blog-description {
+    font-size: .83333em;
+    font-size: var(--text-sm)
+}
+
+body section.blog .blog-post-illustration {
+    height: 50em;
+    position: absolute;
+    right: -12.5%;
+    top: 0
+}
+
+body section.blog article {
+    width: 35%;
+    cursor: pointer;
+    background: #fff;
+    margin: 1%;
+    padding: 1.5% 4%;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .1), 0 8px 16px -8px rgba(0, 0, 0, .1), 0 -6px 16px -6px rgba(0, 0, 0, .01);
+    border-radius: 4px;
+    border: 2px solid transparent;
+    -webkit-transition-duration: .15s;
+    transition-duration: .15s;
+    min-height: 7em;
+    -webkit-transition-property: color, background-color, box-shadow, -webkit-transform;
+    transition-property: color, background-color, box-shadow, -webkit-transform;
+    transition-property: color, background-color, box-shadow, transform;
+    transition-property: color, background-color, box-shadow, transform, -webkit-transform
+}
+
+body section.blog article:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    -webkit-border-image: linear-gradient(79deg, #e590fa, #e204ff 50%, #af4bb8) 1 100%;
+    -o-border-image: linear-gradient(79deg, #e590fa, #e204ff 50%, #af4bb8) 1 100%;
+    border-image: linear-gradient(79deg, #e590fa, #e204ff 50%, #af4bb8) 1 100%;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, .1), 0 18px 36px -18px rgba(0, 0, 0, .1), 0 -12px 36px -8px rgba(0, 0, 0, .01)
+}
+
+body section.blog .circle {
+    width: 13em;
+    height: 13em;
+    border-radius: 100%;
+    background: #D896FF;
+    right: 5em;
+    position: absolute;
+    bottom: 0
+}
+body footer {
+    width: 70%;
+    height: 10em;
+    max-height: 10em;
+    position: relative
+}
+
+body footer h2 {
+    margin-bottom: 1em
+}
+
+.small{
+    width: 200%;
+} */
