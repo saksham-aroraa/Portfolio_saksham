@@ -277,49 +277,49 @@ a:visited {
     --body-line-height: 1.4
 }
 
-body section.skill-set {
+section.skill-set {
     display: -webkit-box;
     display: flex
 }
 
-body section.skill-set .skill-set-content {
+.skill-set-content {
     width: 100%
 }
 
-body section.skill-set .skill-set-content p {
+.skill-set-content p {
     margin-top: 1em;
     line-height: 1.8
 }
 
-body section.skill-set .skill-set-content h4 {
+.skill-set-content h4 {
     margin-top: 1em;
     font-weight: 700
 }
 
-body section.skill-set .skill-set-items-wrapper {
+.skill-set-items-wrapper {
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
     position: relative
 }
 
-body section.skill-set .skill-set-item {
+.skill-set-item {
     width: 40%;
     margin: 5%
 }
 
-body section.skill-set .skill-set-item .skill-logos {
+.skill-logos {
     margin-top: 10px;
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap
 }
 
-body section.skill-set .skill-set-item .skill-logos a.logo {
+.skill-logos a.logo {
     cursor: pointer
 }
 
-body section.skill-set .skill-set-item .skill-logos .logo {
+.skill-logos .logo {
     padding: 6px;
     border: 1px solid rgba(180, 53, 205, 0.812);
     border-radius: 38% 62% 57% 43%/43% 50% 50% 57%;
@@ -328,24 +328,24 @@ body section.skill-set .skill-set-item .skill-logos .logo {
     display: flex;
 }
 
-body section.skill-set .skill-set-item .skill-logos .logo:hover {
+.skill-logos .logo:hover {
     -webkit-animation-play-state: running;
     animation-play-state: running;
     background: rgba(180, 53, 205, 0.212);
     border: 1px solid rgba(226, 3, 255, 0.212)
 }
 
-body section.skill-set .skill-set-item .skill-logos img {
+.skill-logos img {
     width: 25px;
     height: 25px
 }
 
-body section.skill-set .skill-set-illustration-wrapper {
+.skill-set-illustration-wrapper {
     position: relative;
     width: 50%
 }
 
-body section.skill-set .skill-set-icon {
+.skill-set-icon {
     padding: .3em;
     background: #D896FF;
     height: 3em;
@@ -362,7 +362,7 @@ body section.skill-set .skill-set-icon {
     animation: morph 6s ease-in-out infinite alternate both
 }
 
-body section.skill-set .skill-set-icon .icon {
+.skill-set-icon .icon {
     height: 3.5em;
     width: 3.5em
 }
@@ -377,7 +377,7 @@ body section.skill-set .circle {
     position: absolute
 }
 
-body section.skill-set .skill-set-illustration img {
+.skill-set-illustration img {
     height: 50em;
     position: relative;
     left: -36%;
@@ -389,17 +389,17 @@ body section.skill-set .skill-set-illustration img {
     font-size: var(--text-sm)
 }
 
-body section.projects {
+section.projects {
     margin-top: 3em;
     margin-bottom: 3em;
     position: relative
 }
 
-body section.projects h2 {
+section.projects h2 {
     margin-bottom: 2em
 }
 
-body section.projects .project {
+section.projects .project {
     z-index: 1;
     position: relative;
     display: -webkit-box;
@@ -413,7 +413,7 @@ body section.projects .project:nth-of-type(3) {
     margin-left: 15em
 }
 
-body section.projects .project img {
+section.projects .project img {
     border-radius: 18px;
     border: 0;
     box-shadow: none;
@@ -422,11 +422,11 @@ body section.projects .project img {
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025)
 }
 
-body section.projects .project .project-details {
+.project-details {
     padding-top: 1.5em
 }
 
-body section.projects .project .project-details .project-name {
+.project-name {
     font-size: 1.44em;
     font-size: var(--text-lg);
     margin-bottom: .5em;
@@ -434,7 +434,7 @@ body section.projects .project .project-details .project-name {
     color: #4f4f4f
 }
 
-body section.projects .project .project-details .project-description {
+.project-description {
     line-height: 1.8em;
     font-size: .83333em;
     font-size: var(--text-sm);
@@ -442,7 +442,7 @@ body section.projects .project .project-details .project-description {
     color: var(--font-paragraph-color)
 }
 
-body section.projects .ring-wrapper {
+.ring-wrapper {
     position: absolute;
     height: 35em;
     width: 35em;
@@ -453,7 +453,7 @@ body section.projects .ring-wrapper {
     align-self: center
 }
 
-body section.projects .circle-outer {
+.circle-outer {
     background: #D896FF;
     width: 100%;
     position: relative;
@@ -467,7 +467,7 @@ body section.projects .circle-outer {
     justify-content: center
 }
 
-body section.projects .circle-inner {
+.circle-inner {
     width: 60%;
     height: 60%;
     position: relative;
