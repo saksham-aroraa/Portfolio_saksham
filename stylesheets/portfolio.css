@@ -32,6 +32,9 @@ body {
     }
 }
 
+ul{
+    list-style: none;
+}
 .navbar-wrapper {
     display: -webkit-box;
     display: flex;
