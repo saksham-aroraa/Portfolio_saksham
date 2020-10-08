@@ -589,34 +589,34 @@ footer h2 {
 }
 
 @media (max-width:768px) {
-    body header .navbar-logo {
+    .navbar-logo {
         color: #000;
         -webkit-text-fill-color: inherit;
         text-fill-color: inherit
     }
-    body section.hero .hero-illustration {
+    .hero-illustration {
         top: -225px
     }
-    body section.hero .hero-illustration .coder {
+    .coder {
         right: 0;
         bottom: 0
     }
-    body section.hero .hero-illustration .coder-background {
+    .coder-background {
         left: 0
     }
-    body section.hero .hero-intro a {
+    .hero-intro a {
         color: #4f4f4f;
         -webkit-text-fill-color: inherit;
         text-fill-color: inherit
     }
-    body section.hero .hero-intro {
+    .hero-intro {
         width: 80%;
         position: absolute;
         z-index: 1;
         margin-top: 1em;
         margin-left: 10%
     }
-    body section.hero .hero-intro p {
+    .hero-intro p {
         width: 60%
     }
     body {
@@ -628,7 +628,7 @@ footer h2 {
         border-color: black;
         -webkit-text-fill-color: #b646d1;
     }
-    body header {
+    header {
         width: 80%;
         margin: auto
     }
@@ -636,65 +636,65 @@ footer h2 {
         --text-base-size: 1.2em;
         --text-scale-ratio: 1.2
     }
-    body section.skill-set {
+    section.skill-set {
         margin-top: 3em;
         margin-bottom: 3em
     }
-    body section.skill-set .skill-set-content {
+    .skill-set-content {
         width: 80%;
         margin: auto
     }
-    body section.skill-set .skill-set-content h2 {
+    .skill-set-content h2 {
         margin-bottom: 2em
     }
-    body section.skill-set .skill-set-illustration-wrapper {
+    .skill-set-illustration-wrapper {
         width: 0;
         left: -13%
     }
-    body section.skill-set .skill-set-illustration img {
+    .skill-set-illustration img {
         height: 30em;
         top: 7em;
         opacity: .2
     }
-    body section.projects {
+    section.projects {
         width: 80%;
         margin: 10em auto auto
     }
-    body section.projects .project {
+    section.projects .project {
         width: 100%;
         margin-left: 1em;
         margin-bottom: 2em
     }
-    body section.projects .project:nth-of-type(3) {
+    .project:nth-of-type(3) {
         margin-left: 1em
     }
-    body section.projects .project .project-details {
+    .project-details {
         padding-top: 0
     }
-    body section.projects .ring-wrapper {
+    .ring-wrapper {
         opacity: .2;
         height: 30em;
         width: 30em
     }
-    body section.blog .blog-posts {
+    .blog-posts {
         width: 80%;
         margin: auto
     }
-    body section.blog .blog-post-illustration {
+    .blog-post-illustration {
         right: 0
     }
-    body section.blog article {
+    article {
         width: 38%
     }
-    body section.blog .circle {
+    .circle {
         right: 13em;
         opacity: .2
     }
-    body footer {
+    footer {
         width: 80%;
         margin: auto
     }
-    body footer h2 {
+    footer h2 {
         font-size: 1em;
         position: relative;
         z-index: 1
@@ -702,58 +702,55 @@ footer h2 {
 }
 
 @media(max-width:600px) {
-    body header .navbar-logo {
+    .navbar-logo {
         color: #000;
         -webkit-text-fill-color: inherit;
         text-fill-color: inherit
     }
-    body header .navbar-links .navbar-wrapper li:first-of-type {
+    .navbar-wrapper li:first-of-type {
         margin-left: 0
     }
-    body header .navbar-links .navbar-wrapper li:first-of-type {
-        margin-left: 0
-    }
-    body header .navbar-links {
+    .navbar-links {
         margin-top: 1em
     }
-    body header .navbar-links-social {
+    .navbar-links-social {
         margin-top: 1em
     }
-    body header .navbar-links-social img {
+    .navbar-links-social img {
         -webkit-filter: none;
         filter: none
     }
-    body section.hero {
+    section.hero {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
         flex-direction: column-reverse
     }
-    body section.hero .hero-illustration {
+    .hero-illustration {
         top: -225px
     }
-    body section.hero .hero-illustration .coder {
+    .coder {
         right: 0;
         bottom: 0;
         width: 80%
     }
-    body section.hero .hero-intro {
+    .hero-intro {
         position: relative;
         width: 80%;
         top: -150px;
         margin: auto
     }
-    body section.hero .hero-intro p {
+    .hero-intro p {
         width: 100%
     }
-    body header {
+    header {
         flex-wrap: wrap
     }
-    body section.skill-set .skill-set-item {
+    .skill-set-item {
         width: 90%;
         margin-top: 2em;
         margin-bottom: 2em
     }
-    body section.projects .project {
+    .project {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         flex-direction: column;
@@ -764,34 +761,34 @@ footer h2 {
     body section.projects .project:nth-of-type(3) {
         margin: 3.5em auto 3.5em 5%
     }
-    body section.projects .project img {
+    .project img {
         margin: 0
     }
-    body section.projects .project .project-details {
+    .project-details {
         padding-top: 1em;
         width: 90%
     }
-    body section.projects .ring-wrapper {
+    .ring-wrapper {
         height: 15em;
         width: 15em
     }
-    body section.blog .blog-posts {
+    .blog-posts {
         height: auto;
         padding-top: 0
     }
-    body section.blog .blog-post-illustration {
+    .blog-post-illustration {
         bottom: 0;
         top: auto;
         opacity: .2
     }
-    body section.blog article {
+    article {
         margin: .5em;
         width: 80%
     }
-    body section.blog .circle {
+    .circle {
         display: none
     }
-    body footer {
+    footer {
         padding-top: 30px
     }
 }
