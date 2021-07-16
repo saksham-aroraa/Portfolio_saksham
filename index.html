@@ -15,9 +15,9 @@
         <div class="navbar-links">
             <nav>
                 <ul class="navbar-wrapper">
+                    <li><a href="#skillset" class="nav-link">Skillset</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#blog" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,12 +41,12 @@
             <p> You might be turning coffee to code, I've just got preferences for tea :)<br>
                 Currently a core member <a href="https://www.siamvit.in" target="_blank">@Siam-VIT</a>, and also an
                 active member <a href="https://ngoayuda.org/" target="_blank">@Ayuda-NGO</a>.</p><button
-                onclick="noResume()">Resume</button>
+                onclick="resume()">Resume</button>
         </div>
         <div class="hero-illustration"><img src="assets/coding_guy.svg" alt="" class="coder"> <img
                 src="assets/Asset_1.svg" alt="" class="coder-background"></div>
     </section>
-    <section class="skill-set">
+    <section class="skill-set" id="skillset">
         <div class="skill-set-illustration-wrapper">
             <div class="skill-set-illustration">
                 <div class="circle"></div><img src="assets/Asset_2.svg" alt="">
@@ -68,17 +68,8 @@
                         background-origin: initial;
                         background-clip: initial;
                         background-color: initial;">JavaScript</mark>.
-                        <br>(pro tip: these shapes behind the domain vectors are moving)</p>
+                        <br>(pro tip: these shapes behind the domain vectors move when hovered)</p>
                     <div class="skill-logos">
-                        <div class="logo" target="blank">
-                            <img src="assets/HTML5.svg">
-                        </div>
-                        <div class="logo" target="blank">
-                            <img src="assets/css.svg">
-                        </div>
-                        <div class="logo" target="blank">
-                            <img src="assets/js.svg">
-                        </div>
                         <a class="logo" target="blank" href="https://youtu.be/mOpo50Tnzc0?t=4523">
                             <img src="assets/w1.svg">
                         </a>
@@ -90,34 +81,32 @@
                 <div class="skill-set-item">
                     <div class="skill-set-icon"><img style="width: 100%;" src="assets/Competitive.svg"></div>
                     <h4>Competitive Coding</h4>
-                    <p class="text--sm">I have a keen interest in problem solving and competitive coding also. Although
-                        now that
-                        i've been busy increasing my skillset, my<mark class="text-highlight" style="
+                    <p class="text--sm">I have a keen interest in problem solving and competitive coding also.
+                        I spare time with<mark class="text-highlight" style="
                         background-image: url(assets/brush_stroke.svg); background-position-x: 48%;
                         background-position-y: center;
                         background-size: 125% 100%;
                         background-attachment: initial;
                         background-origin: initial;
                         background-clip: initial;
-                        background-color: initial;"> Hackerrank</mark> got
-                        flooded back in March (have 999+ hackos);
-                        going to score more soon!</p>
+                        background-color: initial;"> Hackerrank</mark> 
+                        and
+                        <mark class="text-highlight" style="
+                        background-image: url(assets/brush_stroke.svg); background-position-x: 48%;
+                        background-position-y: center;
+                        background-size: 125% 100%;
+                        background-attachment: initial;
+                        background-origin: initial;
+                        background-clip: initial;
+                        background-color: initial;"> Leetcode</mark>  
+                        </p>
                     <div class="skill-logos">
                         <a class="logo" target="blank" href="https://www.hackerrank.com/arora05saksham">
                             <img src="assets/hackerrank.svg">
                         </a>
-                        <div class="logo" target="blank">
-                            <img src="assets/python.svg">
-                        </div>
-                        <div class="logo" target="blank">
-                            <img src="assets/C.svg">
-                        </div>
-                        <div class="logo" target="blank">
-                            <img src="assets/problem solving.svg">
-                        </div>
-                        <div class="logo" target="blank">
-                            <img src="assets/java.svg">
-                        </div>
+                        <a class="logo" target="blank" href="https://leetcode.com/sakshamarora/">
+                            <img src="assets/leetcode.svg">
+                        </a>
                     </div>
                 </div>
                 <div class="skill-set-item">
@@ -133,10 +122,8 @@
                         background-clip: initial;
                         background-color: initial;">Python, Octave & R </mark>
                         and I soon wanna dive into tenserflow, and neural networks. <br><br>
-                        Ps. I had taken webinars on ML too ;)</p>
+                        Ps. I had taken webinars on ML too</p>
                     <div class="skill-logos">
-                        <div class="logo"><img src="assets/Tensorflow.svg"></div>
-                        <div class="logo"><img src="assets/nn.svg"></div>
                         <a class="logo" target="blank" href="https://youtu.be/4pPISnc0N1w?t=871">
                             <img src="assets/w1.svg">
                         </a>
@@ -184,7 +171,7 @@
                     workshop <a href="https://gravitas.vit.ac.in/" target="_blank">@gravitas'20</a> by <a
                         href="https://www.siamvit.in" target="_blank">Siam-VIT</a> x <a href="https://mstcvit.co.in/"
                         target="_blank">STC-VIT.</a>
-                    I was part of the web-dev team. Handled the link submission page</div>
+                    I was the coordinator and part of the web-dev team</div>
             </div>
         </div>
         <div class="project">
@@ -192,48 +179,18 @@
             <div class="project-details">
                 <div class="project-name">Email spam classifier</div>
                 <div class="project-description"> This was learnt under Andrew NG sir's ML course on coursera. Building
-                    a spam classifier was fun, i so want to put it in action somewhere lol</div>
+                    a spam classifier might be the first productive project I did in ML</div>
             </div>
         </div>
         <div class="project">
             <div class="project-image"><img src="assets/krispy.png" alt=""></div>
             <div class="project-details">
                 <div class="project-name">Krispy</div>
-                <div class="project-description">Building this app to learn AppDev via Kotlin. This is basically a food
-                    app but me and my mates are doing this for our AppDev curiosity :p I'll be updating this on my git real soon
+                <div class="project-description"> Working on this application as a project. This is a food app but with a slight twist. Will upload this on my git asap.
                 </div>
             </div>
     </section>
     <section class="blog" id="blog">
-        <div class="blog-posts">
-            <h2>My Recent Learnings</h2>
-            <div class="article-wrapper">
-                <article><a href="" class="href" target="_blank">
-                        <div class="blog-title">Have planned to write my observations @tech in blogs</div>
-                        <p class="blog-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
-                            dignissimos, maxime atque soluta unde optio quas dicta tempore. Accusantium quasi
-                            necessitatibus nulla ducimus, aliquam quibusdam, placeat maiores corporis eligendi
-                            exercitationem esse iste magnam.</p>
-                    </a></article>
-                <article><a href="" class="href" target="_blank">
-                        <div class="blog-title">I'll prolly put them on Medium and link their API to this page</div>
-                        <p class="blog-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
-                            nihil maiores ipsum commodi sit ullam quibusdam in fuga enim! Modi dolore labore dicta at
-                            eos quod reprehenderit, eaque nostrum dolorum.</p>
-                    </a></article>
-                <article><a href="" class="href" target="_blank">
-                        <div class="blog-title">It could be related to Blockchain, ML, Cloud, etc.</div>
-                        <p class="blog-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. A impedit
-                            eligendi, at omnis modi asperiores aperiam atque neque veritatis similique exercitationem
-                        </p>
-                    </a></article>
-                <article><a href="" class="href" target="_blank">
-                        <div class="blog-title">Or lemme just simply code lol</div>
-                        <p class="blog-description">lorem ipsum, I usually procastinate but this time, i'm sitting from
-                            the last night wow. it's morning already and i'm loving what i am doing lol</p>
-                    </a></article>
-            </div>
-        </div>
         <footer>
             <div>
                 <h2>Want to work together?</h2><a href="https://www.linkedin.com/in/saksham-arora-3570b8190/"
@@ -243,8 +200,8 @@
         <div class="circle"></div><img src="assets/Asset_3.svg" alt="" class="blog-post-illustration">
     </section>
     <script>
-        function noResume() {
-            alert("I haven't built a resume, yet!");
+        function resume() {
+            window.location.href = "/Saksham_resume.pdf";
         }
     </script>
 </body>
